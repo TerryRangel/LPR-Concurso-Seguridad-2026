@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['license-plate', 'vehicle']
+
+roboflow:
+  workspace: mrts-workspace
+  project: license-plates-us-eu-eqzza
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/mrts-workspace/license-plates-us-eu-eqzza/dataset/1
