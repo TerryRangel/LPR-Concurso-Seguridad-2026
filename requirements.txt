@@ -1,0 +1,15 @@
+# --- Visión Computacional y Modelos ---
+ultralytics>=8.0.0      # YOLOv8 para detección de placas (Localización)
+opencv-python>=4.8.0    # Procesamiento de imágenes, recortes y video
+paddleocr>=2.7.0        # Extracción de caracteres de la placa (OCR)
+paddlepaddle>=2.6.0     # Motor base necesario para correr PaddleOCR
+
+# --- Backend y API ---
+fastapi>=0.100.0        # Framework web asíncrono para el servidor
+uvicorn[standard]>=0.23.0 # Servidor ASGI para ejecutar FastAPI
+python-multipart>=0.0.6 # Necesario para recibir imágenes a través de los endpoints
+
+# --- Base de Datos y Seguridad ---
+psycopg2-binary>=2.9.9  # Conector robusto para PostgreSQL
+cryptography>=41.0.0    # Encriptación de registros inválidos (Obligatorio en bases)
+python-dotenv>=1.0.0    # Manejo de variables de entorno (contraseñas, rutas)
